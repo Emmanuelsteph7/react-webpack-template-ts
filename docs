@@ -6,3 +6,7 @@ steps
 3, add react and react-dom as dependencies
 4, add typescript @types/react @types/react-dom as dev dependencies
 5, initialize tsconfig.json using npx tsc --init
+6, create the index.tsx and App.tsx files
+7, add the following as dev dependencies - @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript
+8, add a .babelrc config file and its configuration
+9, add the following as dev dependencies - webpack webpack-cli webpack-dev-server html-webpack-plugin babel-loader
