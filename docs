@@ -1,0 +1,8 @@
+Docs for this repo
+
+steps
+1, create the initial structure (src, .gitignore)
+2, initialize git and package.json
+3, add react and react-dom as dependencies
+4, add typescript @types/react @types/react-dom as dev dependencies
+5, initialize tsconfig.json using npx tsc --init
