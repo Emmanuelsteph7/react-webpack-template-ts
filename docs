@@ -11,3 +11,7 @@ steps
 8, add a .babelrc config file and its configuration
 9, add the following as dev dependencies - webpack webpack-cli webpack-dev-server html-webpack-plugin babel-loader
 10, to work with css files, add css-loader and style-loader as dev dependencies
+11, add the test config to webpack for css files attaching the css and style loaders
+12, when importing images, typescript gives an error: "Cannot find module './image.png' or its corresponding type declarations."
+to fix this, in the src folder, create a declarations.d.ts file and add "declare module "\*.png""
+13, in webpack 4, to handle files, we add the file-loader package, but in webpack 5, there is in-built support for files using assets modules

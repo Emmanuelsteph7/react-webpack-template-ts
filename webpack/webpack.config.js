@@ -19,6 +19,10 @@ module.exports = {
         test: /\.css$/, // searches for .css files
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i, // searches for the listed files
+        type: "asset/resource", // uses the asset module to handle them instead of imorting file-loader package
+      },
     ],
   },
   output: {
