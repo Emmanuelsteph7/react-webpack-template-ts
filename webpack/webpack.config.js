@@ -15,6 +15,10 @@ module.exports = {
         exclude: /node_modules/, // exclude node_modules
         use: [{ loader: "babel-loader" }], // webpack should use babel-loader for all the specified files
       },
+      {
+        test: /\.css$/, // searches for .css files
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   output: {
