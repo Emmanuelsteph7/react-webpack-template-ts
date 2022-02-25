@@ -18,3 +18,7 @@ to fix this, in the src folder, create a declarations.d.ts file and add "declare
 14, add the config for images in the webpack config
 15, to fix importing svgs, add "declare module "_.svg"" to the declaration.d.ts
 16, in webpack 4, handling svgs required url-loader, but in webpack 5, we can use the asset inline module type
+17, add the config for svgs and fonts to the config
+18, create webpack.dev.js, webpack.prod.js, webpack.config.js. rename the previous webpack.config.js to webpack.common.js
+19, to merge webpack files, add webpack-merge package
+20, add the config values to the files
