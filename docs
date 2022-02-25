@@ -22,3 +22,7 @@ to fix this, in the src folder, create a declarations.d.ts file and add "declare
 18, create webpack.dev.js, webpack.prod.js, webpack.config.js. rename the previous webpack.config.js to webpack.common.js
 19, to merge webpack files, add webpack-merge package
 20, add the config values to the files
+21, using create-react-app, when we change a value and save, it doesn't change the entire state to default. but currently, if we change something, it will set everything to default and refresh the app because of the webpack compilation. in dev mode, it is crucial to have the state maintained.
+to handle this, we can use the react-refresh-webpack-plugin
+22, yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh
+23, add the config to the webpack.dev.js file
