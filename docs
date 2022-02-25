@@ -13,5 +13,8 @@ steps
 10, to work with css files, add css-loader and style-loader as dev dependencies
 11, add the test config to webpack for css files attaching the css and style loaders
 12, when importing images, typescript gives an error: "Cannot find module './image.png' or its corresponding type declarations."
-to fix this, in the src folder, create a declarations.d.ts file and add "declare module "\*.png""
-13, in webpack 4, to handle files, we add the file-loader package, but in webpack 5, there is in-built support for files using assets modules
+to fix this, in the src folder, create a declarations.d.ts file and add "declare module "_.png""
+13, in webpack 4, to handle files, we add the file-loader package, but in webpack 5, there is in-built support for files using asset resource module type
+14, add the config for images in the webpack config
+15, to fix importing svgs, add "declare module "_.svg"" to the declaration.d.ts
+16, in webpack 4, handling svgs required url-loader, but in webpack 5, we can use the asset inline module type

@@ -1,5 +1,5 @@
 import React from "react";
-import { image } from "./assets";
+import { image, googleSvg } from "./assets";
 import "./styles.css";
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
     <div>
       <h1>React Typescript Template</h1>
       <img src={image} alt="" />
+      <img src={googleSvg} alt="" width={50} height={50} />
     </div>
   );
 };

@@ -23,6 +23,10 @@ module.exports = {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i, // searches for the listed files
         type: "asset/resource", // uses the asset module to handle them instead of imorting file-loader package
       },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg)$/,
+        type: "asset/inline",
+      },
     ],
   },
   output: {
