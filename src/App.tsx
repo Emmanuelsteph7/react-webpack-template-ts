@@ -4,9 +4,6 @@ import Counter from './components/Counter'
 import './styles.css'
 
 const App = () => {
-  const name = 'john'
-
-  console.log(name)
   return (
     <div>
       <h1>React Typescript Template</h1>
