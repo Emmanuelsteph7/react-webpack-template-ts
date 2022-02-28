@@ -49,3 +49,7 @@ to handle this, we can use the react-refresh-webpack-plugin
 }
 }
 husky aborts a commit when there are linting errors. if there are no linting errors, just formatting errors, the code will be formatted and committed
+33, add the following packages - yarn add -D @babel/runtime @babel/plugin-transform-runtime. this lets us use the async-await feature in the react app. configure it in .babelrc file
+34, add yarn add -D copy-webpack-plugin. add its config to the webpack.common.js file
+35, add yarn add -D webpack-bundle-analyzer. this helps visualize the webpack output files and understand the sizes of files generated after build
+35, add config to webpack.prod.js file
