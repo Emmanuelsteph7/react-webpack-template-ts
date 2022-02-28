@@ -29,3 +29,6 @@ to handle this, we can use the react-refresh-webpack-plugin
 24, add the following packages for eslint - yarn add -D eslint eslint-plugin-react eslint-plugin-react-hooks @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-jsx-a11y
 25, create a .eslintre.js file and add configurations to it
 26, add a script in package.json for linting : "lint": "eslint --fix \"./src/\*_/_.{js,jsx,ts,tsx,json}\"". This asks eslint to fix any possible error that it can or highlight the errors in the src folders for files with the above extensions.
+27, add the following for prettier - yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+28, create a .prettierrc.js file and add its configurations
+29, add a script in package.json for formatting : "format": "prettier --write \"./src/\*_/_.{js,jsx,ts,tsx,json,css,scss,md}\"",

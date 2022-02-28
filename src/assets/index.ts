@@ -1,4 +1,4 @@
-import image from "./image.PNG";
-import googleSvg from "./googlesvg.svg";
+import image from './image.PNG'
+import googleSvg from './googlesvg.svg'
 
-export { image, googleSvg };
+export { image, googleSvg }
