@@ -32,3 +32,20 @@ to handle this, we can use the react-refresh-webpack-plugin
 27, add the following for prettier - yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 28, create a .prettierrc.js file and add its configurations
 29, add a script in package.json for formatting : "format": "prettier --write \"./src/\*_/_.{js,jsx,ts,tsx,json,css,scss,md}\"",
+30, we can ensure that files committed to git doesn't have linting or formatting errors using the following packages - yarn add -D lint-staged husky@4
+31, define the lint-staged tool configuration in package.json :
+"lint-staged": {
+"src/**/\*.{js,jsx,ts,tsx,json}": [
+"eslint --fix"
+],
+"src/**/\*.{js,jsx,ts,tsx,json,css,scss,md}": [
+"prettier --write"
+]
+}
+32, add husky configuration in package.json
+"husky": {
+"hooks": {
+"pre-commit": "lint-staged"
+}
+}
+husky aborts a commit when there are linting errors. if there are no linting errors, just formatting errors, the code will be formatted and committed
